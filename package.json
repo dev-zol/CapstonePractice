@@ -1,0 +1,27 @@
+{
+  "name": "CapstonePractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-zol/CapstonePractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-zol/CapstonePractice/issues"
+  },
+  "homepage": "https://github.com/dev-zol/CapstonePractice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
