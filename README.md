@@ -2,7 +2,7 @@
 
 # INSTALL
 ## npm init -y
-## npm i express axios
+## npm i express axios cors dotenv
 ## cd test
 ## npm install
 
