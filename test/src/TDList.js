@@ -16,14 +16,12 @@ const TDList = () => {
 
     const sendData = event => {
         event.preventDefault();
-
     
-
         axios
             .post('http://localhost:5000/record/add', {...state})
             .then(response => {
             setResult(response.data);
-            setState({ name: '', task: ''});
+            setState({ name: '', pass: ''});
             })
             .catch(() => {
             setResult({ success: false, message: 'Something went wrong. Try again later'});
@@ -52,7 +50,7 @@ const TDList = () => {
                     </div>
                     <div className="row">
                         <label htmlFor="pass-input">Password</label>
-                        <input className="half-width" type="text" name="pass" value={state.oass} onChange={onInputChange}/>
+                        <input className="half-width" type="text" name="pass" value={state.pass} onChange={onInputChange}/>
                     </div>
                     <div className="row">
                         <input className="button-primary" type="submit" value="Submit" />
