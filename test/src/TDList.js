@@ -9,18 +9,19 @@ const TDList = () => {
 
     const [state, setState] = useState({
         name: '',
-        task: ''
+        pass: ''
       });
 
     const [result, setResult] = useState(null);
 
     const sendData = event => {
         event.preventDefault();
+    
         axios
-            .post('/send', { ...state })
+            .post('http://localhost:5000/record/add', {...state})
             .then(response => {
             setResult(response.data);
-            setState({ name: '', task: ''});
+            setState({ name: '', pass: ''});
             })
             .catch(() => {
             setResult({ success: false, message: 'Something went wrong. Try again later'});
@@ -48,8 +49,8 @@ const TDList = () => {
                         <input className="half-width" type="text" name="name" value={state.name} onChange={onInputChange}/> 
                     </div>
                     <div className="row">
-                        <label htmlFor="text-input">Task</label>
-                        <input className="half-width" type="text" name="task" value={state.task} onChange={onInputChange}/>
+                        <label htmlFor="pass-input">Password</label>
+                        <input className="half-width" type="text" name="pass" value={state.pass} onChange={onInputChange}/>
                     </div>
                     <div className="row">
                         <input className="button-primary" type="submit" value="Submit" />
