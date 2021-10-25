@@ -3,7 +3,6 @@ const recordRoutes = express.Router();
 const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
 
-
 recordRoutes.route("/record").get(function (req, res) {
   let db_connect = dbo.getDb("employees");
   db_connect
@@ -30,7 +29,10 @@ recordRoutes.route("/record/add").post(function (req, response) {
   let db_connect = dbo.getDb();
   let myobj = {
     person_name: req.body.name,
-    person_pass: req.body.pass
+    person_pass: req.body.pass,
+    class: null,
+    hobby_1: null,
+    hobby_2: null
   };
   db_connect.collection("records").insertOne(myobj, function (err, res) {
     if (err) throw err;
