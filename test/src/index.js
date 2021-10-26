@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 //import { Link } from "react-router-dom";
 
 ReactDOM.render((
-   <BrowserRouter basename="/Login">
+   <BrowserRouter basename="/">
     <App /> 
   </BrowserRouter>
   ), document.getElementById('root')
