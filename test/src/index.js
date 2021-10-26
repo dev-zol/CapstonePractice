@@ -5,24 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 ReactDOM.render((
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-
    <BrowserRouter basename="/Login">
-   <Link to= "/CreateProfile"/>
-   <Link to= "/ReturningUser"/>
-   <Link to= "/Survey"/>
-   <Link to= "/Matches"/>
-   <Link to= "/Messaging"/>
-
     <App /> 
   </BrowserRouter>
   ), document.getElementById('root')
 );
+
+//<Link to= "/CreateProfile"/>
+//<Link to= "/ReturningUser"/>
+//<Link to= "/Survey"/>
+//<Link to= "/Matches"/>
+//<Link to= "/Messaging"/>
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

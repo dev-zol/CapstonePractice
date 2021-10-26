@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./style/skeleton.css";
 import { Link } from "react-router-dom";
 
-import CreateProfile from './CreateProfile';
+import CreateProfile from './createProfile';
 
 // test
 
@@ -56,8 +56,8 @@ const Login = () => {
                     </div>
                     <div className="row">
                       <Link to="/CreateProfile">
-                         <button variant="outlined">
-                        Sign up
+                        <button variant="outlined">
+                            Sign up
                         </button>
                      </Link>
                     </div>
