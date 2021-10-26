@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./style/skeleton.css";
 import { Link } from "react-router-dom";
 
-import CreateProfile from './createProfile';
+import CreateProfile from './CreateProfile';
 
 // test
 

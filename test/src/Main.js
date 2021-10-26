@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import CreateProfile from './createProfile';
-import ReturningUser from './returningUser';
-import Survey from './survey';
-import Matches from './matches';
-import Messaging from './messaging';
-import Login from './login'
+import CreateProfile from './CreateProfile';
+import ReturningUser from './ReturningUser';
+import Survey from './Survey';
+import Matches from './Matches';
+import Messaging from './Messaging';
+import Login from './Login'
 
 
 
