@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import TDList from './TDList';
+import Login from './Login.js';
+import Main from './Main.js';
 //test
 function App() {
   const [data, setData] = React.useState(null);
@@ -15,7 +16,6 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar />
       <Main />
       
       <header className="App-header">
@@ -33,7 +33,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <login />
+      <Login/>
     </div>
   );
 }

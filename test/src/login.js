@@ -3,9 +3,11 @@ import axios from 'axios';
 import "./style/skeleton.css";
 import { Link } from "react-router-dom";
 
+import CreateProfile from './CreateProfile';
+
 // test
 
-const login = () => {
+const Login = () => {
     
 
     const [state, setState] = useState({
@@ -38,27 +40,26 @@ const login = () => {
     };
     
     return (
-        <Link to="/signup">
-            <button variant="outlined">
-            Sign up
-            </button>
-        </Link>
         <div className="container">
             <div className="row">
-                <h1>Welcome to JayFlock</h1>
+                <h1>Welcome to JaysFlock</h1>
             </div>
             <form className="form" onSubmit={sendData}>
                 <div className="row">
                     <div className="row">
-                        <label htmlFor="name-input">User name</label>
-                        <input className="half-width" type="text" name="name" value={state.name} onChange={onInputChange}/> 
+                        <label htmlFor="name-input">Username</label>
+                        <input className="half-width" type="text" name="userName" value={state.userName} onChange={onInputChange}/> 
                     </div>
                     <div className="row">
                         <label htmlFor="text-input">Password</label>
-                        <input className="half-width" type="text" name="task" value={state.task} onChange={onInputChange}/>
+                        <input className="half-width" type="text" name="password" value={state.password} onChange={onInputChange}/>
                     </div>
                     <div className="row">
-                        <input className="button-primary" type="submit" value="Submit" />
+                      <Link to="/CreateProfile">
+                         <button variant="outlined">
+                        Sign up
+                        </button>
+                     </Link>
                     </div>
                 </div> 
             </form> 
@@ -66,4 +67,4 @@ const login = () => {
     );
 };
 
-export default login
+export default Login

@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-	render (){
+	const CreateProfile = () => {
 		return(
                 <h1>Create your Profile</h1>
 
 		);
 	}
-}
-
-	export default createProfile; 
+	export default CreateProfile; 

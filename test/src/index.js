@@ -5,14 +5,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
+import { Link } from "react-router-dom";
+
+ReactDOM.render((
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
 
-   <BrowserRouter>
-    <App /> {/* The various pages will be displayed by the `Main` component. */}
+   <BrowserRouter basename="/Login">
+   <Link to= "/CreateProfile"/>
+   <Link to= "/ReturningUser"/>
+   <Link to= "/Survey"/>
+   <Link to= "/Matches"/>
+   <Link to= "/Messaging"/>
+
+    <App /> 
   </BrowserRouter>
   ), document.getElementById('root')
 );
