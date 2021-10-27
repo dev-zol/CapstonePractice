@@ -2,20 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './ReportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+//import { Link } from "react-router-dom";
 
-   <BrowserRouter>
-    <App /> {/* The various pages will be displayed by the `Main` component. */}
+ReactDOM.render((
+   <BrowserRouter basename="/">
+    <App /> 
   </BrowserRouter>
   ), document.getElementById('root')
 );
+
+//<Link to= "/CreateProfile"/>
+//<Link to= "/ReturningUser"/>
+//<Link to= "/Survey"/>
+//<Link to= "/Matches"/>
+//<Link to= "/Messaging"/>
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
