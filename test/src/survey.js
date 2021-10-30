@@ -26,10 +26,28 @@ const Survey = () => {
     };
 		return(
 	<div id = "overallDiv">
-		<form className="form" onSubmit={sendData}>
-		<div id="HobbiesContainer">
-			<h1>Complete Survey to Find Potential Matches</h1>
+		<form className="surveyForm" onSubmit={sendData}>
+
+		<div id="DormContainer">
+			<h4>Fill out survey to meet more students like you! in?</h4>
 			
+				<h2 id="DormQuestion">What Dorm are you in?</h2>
+				<input type="checkbox" value="Kiewit"/>
+				<label>Kiewit</label><br/>
+				<input type="checkbox" value="Gallagher"/>
+				<label>Gallagher</label><br/>
+				<input type="checkbox" value="Swanson"/>
+				<label>Swanson</label><br/>
+				<input type="checkbox" value="McGloin"/>
+				<label>McGloin</label><br/>
+				<input type="checkbox" value="Kenefick"/>
+				<label>Kenefick</label><br/>
+				<input type="checkbox" value="Davis"/>
+				<label>Davis</label><br/>
+				<input type="checkbox" value="Opus"/>
+				<label>Opus</label><br/>
+	</div>
+	<div id="HobbiesContainer">
 				<h2 id="HobbieQuestion">What Hobbies do you enjoy or are interested in?</h2>
 				<input type="checkbox" value="Reading"/>
 				<label>Reading</label><br/>
@@ -163,8 +181,8 @@ const Survey = () => {
 
 		<div id="CoreValueContainer">
 			<h2 id="CoreValueQuestion">What are your Core Values?</h2>
-			<input type="checkbox" value="Religion/Spirituality"/>
-			<label>Religion/Spirituality</label><br/>
+			<input type="checkbox" value="Religion or Spirituality"/>
+			<label>Religion or Spirituality</label><br/>
 			<input type="checkbox" value="Family"/>
 			<label>Family</label><br/>
 			<input type="checkbox" value="Friends"/>
@@ -235,9 +253,11 @@ const Survey = () => {
 
 		</div>	
 
-			<div id="sumbitBox">
-			<input className="button-primary" type="submit" value="Submit" />
-			</div>
+			 <Link to="/Matches">
+                <button variant="outlined">
+                    Sumbit
+                    </button>
+            </Link>
 	
 		</form>	
 	</div>
