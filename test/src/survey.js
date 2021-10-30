@@ -252,13 +252,11 @@ const Survey = () => {
 			<label>Fairness</label><br/>
 
 		</div>	
-
 			 <Link to="/Matches">
                 <button variant="outlined">
                     Sumbit
                     </button>
             </Link>
-	
 		</form>	
 	</div>
 
