@@ -73,6 +73,7 @@ import React, {useState} from 'react';
                 </div> 
             </form> 
         </div>
+        
     );
   }
   export default CreateProfile; 
