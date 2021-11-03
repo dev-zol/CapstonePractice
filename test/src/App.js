@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import Login from './login.js';
+import Login from './Login.js';
 import Main from './Main.js';
 //test
 function App() {
