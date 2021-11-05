@@ -87,6 +87,25 @@ class CreateProfile extends Component {
                         <label htmlFor="text-input">What are you most excited about this semester?</label>
                         <input className="" type="text"/>
                     </div>
+
+                    <div className="row">
+                        <h4>What hobbies do you enjoy?</h4>
+                        
+                        <div className="row">
+                        <label>
+                        <input type="checkbox"/>
+                        <span> Reading </span>
+                        </label>
+                        </div>
+
+                        <div className="row">
+                        <label>
+                        <input type="checkbox"/>
+                        <span> Movies </span>
+                        </label>
+                         </div>
+
+                    </div>
                     <div className="row">
                         <button variant="outlined" type="submit">
                             Sign up
