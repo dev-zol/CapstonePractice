@@ -34,7 +34,9 @@ router.post("/register", (req, res) => {
                 firstName: req.body.firstName,
                 lastName: req.body.lastName,
                 email: req.body.email,
-                password: req.body.password
+                password: req.body.password,
+                reading: req.body.reading,
+                movies: req.body.movies
             });
             // Hash password before saving in database
             bcrypt.genSalt(10, (err, salt) => {
@@ -84,7 +86,9 @@ router.post("/login", (req, res) => {
                 const payload = {
                     id: user.id,
                     firstName: user.firstName,
-                    lastName: user.lastName
+                    lastName: user.lastName,
+                    reading: user.reading,
+                    movies: user.movies
                 };
                 // Sign token
                 jwt.sign(

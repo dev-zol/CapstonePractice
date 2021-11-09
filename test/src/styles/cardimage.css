@@ -1,0 +1,13 @@
+.cardImg {
+    object-fit: cover;
+    max-height: 260px;
+    min-height: 260px;
+}
+
+@media only screen and (min-width: 0) {
+    .cardImg {
+        object-fit: cover;
+        max-height: 220px;
+        min-height: 220px;  
+    }
+}

@@ -18,6 +18,14 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  reading: {
+    type: Boolean,
+    required: true
+  },
+  movies: {
+    type:Boolean,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now

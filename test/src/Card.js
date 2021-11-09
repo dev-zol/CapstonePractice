@@ -1,37 +1,27 @@
-import './cardStyle.css';
-import {makeStyles} from "@material-ui/core/styles";
-// import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardContent';
-import  Grid  from "@material-ui/core/Grid";
-import {dummydata} from "./dummydata";
+import React, {Component} from 'react'
+import './styles/cardimage.css'
 
+class Card extends Component {
 
-const Card = ({ name, email, hobbies}) => {
-  // <div className="card-container">
-  //       {dummydata.map((person) => {
-  //         return <Card {...person} />;
-  //      })}
-  //     </div>
-
-  return (
-    <div className="card">
-      <h3>{name}</h3>
-      <h6>{email}</h6>
-      <h4>{hobbies}</h4>
-
-      <button
-        style={{
-          width: "150px",
-          borderRadius: "3px",
-          letterSpacing: "1.5px",
-          marginTop: "1rem" }}
-          className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-          Message</button>
-    </div>
-  );
-
-};
-
-
+  render() {
+    return(
+      <div className="card">
+        <div className="card-image">
+          <img src={this.props.bg} alt="background-1" className="cardImg" />
+        </div>
+        <div className="card-content">
+          <p>Tyler Kamei</p>
+          <ul>
+            <li>Movies</li>
+            <li>Reading</li>
+          </ul>
+        </div>
+        <div className="card-action">
+          <a href="#">Chat</a>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default Card;
