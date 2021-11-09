@@ -1,11 +1,23 @@
-import './App.css';
 import './cardStyle.css';
-const Card = ({ name, email, cardStyle }) => {
+import {makeStyles} from "@material-ui/core/styles";
+// import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardContent';
+import  Grid  from "@material-ui/core/Grid";
+import {dummydata} from "./dummydata";
+
+
+const Card = ({ name, email, hobbies}) => {
+  // <div className="card-container">
+  //       {dummydata.map((person) => {
+  //         return <Card {...person} />;
+  //      })}
+  //     </div>
+
   return (
-    // <div className="card">
-    <div className={`card ${cardStyle}`}>
-      <h2>{name}</h2>
-      <h4>{email}</h4>
+    <div className="card">
+      <h3>{name}</h3>
+      <h6>{email}</h6>
+      <h4>{hobbies}</h4>
 
       <button
         style={{
@@ -14,9 +26,12 @@ const Card = ({ name, email, cardStyle }) => {
           letterSpacing: "1.5px",
           marginTop: "1rem" }}
           className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-          Message </button>
+          Message</button>
     </div>
   );
+
 };
+
+
 
 export default Card;

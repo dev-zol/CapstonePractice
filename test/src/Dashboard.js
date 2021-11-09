@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
 import {dummydata} from "./dummydata";
+import Card from './Card.js';
+import Grid  from "@material-ui/core/Grid";
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -12,8 +15,8 @@ render() {
     const { user } = this.props.auth;
     console.log(user)
 return (
+      <div className="overallDiv">
       <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
           <div className="col s12 center-align">
             <h4>
               <b>Hey there,</b> {user.firstName + " " + user.lastName}
@@ -34,9 +37,29 @@ return (
             >
               Logout
             </button>
-          </div>
         </div>
+             </div>
+    
+
+<Grid container>   
+   <Grid item xs={6}>           
+      <Card />
+    </Grid>
+    <Grid item xs={6}>           
+      <Card />
+    </Grid>
+    <Grid item xs={6}>           
+      <Card />
+    </Grid>
+    <Grid item xs={6}>           
+      <Card />
+    </Grid>
+</Grid>
+
+
+
       </div>
+
     );
   }
 }

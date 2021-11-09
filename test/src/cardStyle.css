@@ -16,20 +16,29 @@
     left: 100%;
     transform: translateX(calc(-100% - 2rem));
     opacity: 0;
-}
-*/
+}*/
 
-.prevCard {
+
+/*.prevCard {
   left: 0;
 }
 
 .activeCard {
   left: 50%;
-  transform: translateX(-50%); 
-                                    
-                              
+  transform: translateX(-50%);                               
+                   
 }
 
 .nextCard {
   right: 0;
+}*/
+
+*{
+ flex-grow: 1;
+ 
 }
+
+.card{
+  font-size: 20pt !important ;
+}
+
