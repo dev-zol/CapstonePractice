@@ -6,6 +6,9 @@ import { connect } from "react-redux";
 import { registerUser } from "./actions/authActions";
 import classnames from "classnames";
 
+let readingC = false;
+let moviesC = false;
+
 class CreateProfile extends Component {
     constructor() {
         super();
@@ -14,6 +17,8 @@ class CreateProfile extends Component {
           lastName: "",
           email: "",
           password: "",
+          reading: false,
+          movies: false,
           errors: {}
         };
     }
@@ -39,7 +44,9 @@ class CreateProfile extends Component {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             email: this.state.email,
-            password: this.state.password
+            password: this.state.password,
+            reading: this.state.reading,
+            movies: this.state.movies
         }
         console.log(newUser);
         this.props.registerUser(newUser, this.props.history); 
@@ -49,6 +56,25 @@ class CreateProfile extends Component {
         event.preventDefault();
         this.setState({ [event.target.id]: event.target.value });
     };
+
+    onReadingChange = event => {
+        if(readingC == false) {
+            readingC = true
+        } else {
+            readingC = false
+        }
+
+        this.setState({reading: readingC});
+    }
+
+    onMoviesChange = event => {
+        if(moviesC == false) {
+            moviesC = true
+        } else {
+            moviesC = false
+        }
+        this.setState({ movies: moviesC });
+    }
 
     render() {
         const { errors } = this.state;
@@ -86,6 +112,25 @@ class CreateProfile extends Component {
                      <div className="row">
                         <label htmlFor="text-input">What are you most excited about this semester?</label>
                         <input className="" type="text"/>
+                    </div>
+
+                    <div className="row">
+                        <h4>What hobbies do you enjoy?</h4>
+                        
+                        <div className="row">
+                        <label>
+                        <input type="checkbox"id="reading" onChange={this.onReadingChange}/>
+                        <span> Reading </span>
+                        </label>
+                        </div>
+
+                        <div className="row">
+                        <label>
+                        <input type="checkbox" id="movies" onChange={this.onMoviesChange} />
+                        <span> Movies </span>
+                        </label>
+                         </div>
+
                     </div>
                     <div className="row">
                         <button variant="outlined" type="submit">
