@@ -1,6 +1,7 @@
 import {
     SET_CURRENT_USER,
-    USER_LOADING
+    USER_LOADING,
+    GET_DATA
 } from "../actions/types";
 const isEmpty = require("is-empty");
 const initialState = {

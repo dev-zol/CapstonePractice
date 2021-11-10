@@ -3,7 +3,9 @@ import {
 } from "redux";
 import authReducer from "./authReducer";
 import errorReducer from "./errorReducer";
+import dataReducer from "./dataReducer";
 export default combineReducers({
     auth: authReducer,
-    errors: errorReducer
+    errors: errorReducer,
+    data: dataReducer
 });

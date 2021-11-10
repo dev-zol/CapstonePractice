@@ -17,7 +17,7 @@ class Card extends Component {
           </ul>
         </div>
         <div className="card-action">
-          <a href="#">Chat</a>
+          <a href="#" className="waves-effect waves-light btn-small">Chat</a>
         </div>
       </div>
     )

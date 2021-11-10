@@ -5,6 +5,8 @@ import { logoutUser } from "./actions/authActions";
 
 import Navbar from './Navbar'
 import Card from './Card'
+import CardData from './CardData'
+
 
 import bg1 from './assets/bg1.jpg'
 import bg2 from './assets/bg2.jpg'
@@ -31,8 +33,8 @@ return (
             <Card bg={bg4}/>
           </div>
         </div>
+        <CardData />
       </div>
-
     );
   }
 }

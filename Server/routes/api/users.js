@@ -114,4 +114,12 @@ router.post("/login", (req, res) => {
     });
 });
 
+router.post("/data", (req, res) => {
+    console.log(req.body)
+    User.find({'reading' : req.body.reading, 'movies' : req.body.movies}).then(user => {
+        res.send(user)
+    });
+});
+
+
 module.exports = router;
