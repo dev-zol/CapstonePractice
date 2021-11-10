@@ -7,7 +7,6 @@ import Navbar from './Navbar'
 import Card from './Card'
 import CardData from './CardData'
 
-
 import bg1 from './assets/bg1.jpg'
 import bg2 from './assets/bg2.jpg'
 import bg3 from './assets/bg3.jpg'
@@ -19,20 +18,6 @@ render() {
 return (    
       <div style={{width: "100%"}} className="container">
         <Navbar />
-        <div className="row">
-          <div className="col s12 m4">
-            <Card bg={bg1}/>
-          </div>
-          <div className="col s12 m4">
-            <Card bg={bg2}/>
-          </div>
-          <div className="col s12 m4">
-            <Card bg={bg3}/>
-          </div>
-          <div className="col s12 m4">
-            <Card bg={bg4}/>
-          </div>
-        </div>
         <CardData />
       </div>
     );

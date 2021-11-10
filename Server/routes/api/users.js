@@ -88,7 +88,8 @@ router.post("/login", (req, res) => {
                     firstName: user.firstName,
                     lastName: user.lastName,
                     reading: user.reading,
-                    movies: user.movies
+                    movies: user.movies,
+                    email: user.email
                 };
                 // Sign token
                 jwt.sign(

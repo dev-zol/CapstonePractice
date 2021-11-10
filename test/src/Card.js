@@ -10,10 +10,11 @@ class Card extends Component {
           <img src={this.props.bg} alt="background-1" className="cardImg" />
         </div>
         <div className="card-content">
-          <p>Tyler Kamei</p>
+          <p>{this.props.firstName + " " + this.props.lastName}</p>
+          <p>{this.props.email}</p>
           <ul>
-            <li>Movies</li>
-            <li>Reading</li>
+            {this.props.reading? <li>Reading</li> : null}
+            {this.props.movies? <li>Movies</li> : null}
           </ul>
         </div>
         <div className="card-action">
