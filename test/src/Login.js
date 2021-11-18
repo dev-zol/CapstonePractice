@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "./actions/authActions";
 import classnames from "classnames";
-
+import "./styles/loginpage.css";
 
 // test
-
 class Login extends Component {
     constructor() {
         super();
@@ -56,9 +55,10 @@ class Login extends Component {
     render() {
         const { errors } = this.state;
     return (
+        <div className = "overall">
         <div className="container">
             <div className="row">
-                <h1>Welcome to JaysFlock</h1>
+                <h1>Welcome to Flock</h1>
             </div>
             <form className="loginForm" noValidate onSubmit={this.sendData}>
                 <div className="row">
@@ -72,18 +72,23 @@ class Login extends Component {
                         <span className="red-text"> {errors.password}{errors.passwordincorrect}</span>
                         <input className={classnames("", {invalid: errors.password || errors.passwordincorrect})} error={errors.password} type="password" id="password" name="password" value={this.state.password} onChange={this.onInputChange} />
                     </div>
-                    <div className="">
+                    <div className="button">
                         <button variant="outlined" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
                             Log in
                         </button>
-                     <p> If you do not already have an account </p> 
+                       </div>
+
+                     <div className = "footer">
+                      <p> If you do not already have an account </p> 
                      <Link to="/CreateProfile"> 
                         Sign Up!
                     </Link>
                     </div>
+                 
                 </div> 
             </form> 
         </div>
+    </div>
     );
 };
 }
