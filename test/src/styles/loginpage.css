@@ -1,22 +1,69 @@
-.overall{
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Oxygen:wght@700&display=swap');
+
+*{
 	background-color: #95D2F3;
+	font-family: 'Oxygen', sans-serif;
 }
 
 
 .button{
-	margin-left: 225px;
-	
+	text-align: center;
 }
 
 p{
-	color: #5D6468;
+	color: #002E6D;
 }
 
 .footer{
-	margin-left: 250px;
+	font-weight: bold;
+	text-align: center;
+	color: #019CDB;
+}
+
+.dark-blue {
+	color: #002E6D;
+	font-size: 50px;
+	text-align: center;
+	font-family: Courgette;
+	
+}
+
+.dark-blue2 {
+	color: #002E6D;
+	font-size: 20px;
+	text-align: center;
+	font-family: Courgette;
+	display: inline-block;
+}
+
+ .footerOverall {
+	text-align: center;
 
 }
 
-#row div{
-	background-color: red;
+.linkDiv{
 }
+
+img{
+	max-width: 25%;
+}
+
+
+.imgDiv {
+	text-align: center;
+
+}
+
+.emailLabel, .passwordLabel{
+	background-color: transparent;
+	font-size: 15pt !important;
+	color: white !important;
+	border-bottom: white !important;
+}
+
+
+
+
+
