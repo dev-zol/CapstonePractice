@@ -77,20 +77,20 @@ class Login extends Component {
                         <input className={classnames("", {invalid: errors.password || errors.passwordincorrect})} error={errors.password} type="password" id="password" name="password" value={this.state.password} onChange={this.onInputChange} />
                     </div>
                     <div className="button">
-                        <button variant="outlined" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
+                        <button variant="outlined" id="btn" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
                             Log in
                         </button>
                        </div>
 
-                    <div className = "footerOverall">
-                     <div className = "footer">
-                        <p className = "dark-blue2"> If you do not already have an account </p> 
+                <div className = "footerOverall">
+                    <div className = "customFooter">
+                            <p className = "dark-blue2"> If you do not already have an account </p> 
                     </div>
 
-                    <div className = "linkDiv">
-                      <Link to="/CreateProfile" className="signUpLink">Sign Up!</Link>
+                    <div className = "customFooter">
+                        <Link to="/CreateProfile" className="signUpLink">Sign Up!</Link>
                     </div>
-                    </div>
+                </div>
                  
                 </div> 
             </form> 

@@ -7,19 +7,22 @@
 	font-family: 'Oxygen', sans-serif;
 }
 
-
-.button{
-	text-align: center;
+#btn:hover{
+	background-color: #FFCC4F !important;
 }
 
 p{
 	color: #002E6D;
 }
 
-.footer{
+.customFooter{
 	font-weight: bold;
 	text-align: center;
 	color: #019CDB;
+	display: inline-block;
+  	width: 340px;
+  	height: 100px;
+  	padding-top: 50px;
 }
 
 .dark-blue {
@@ -31,19 +34,11 @@ p{
 }
 
 .dark-blue2 {
-	color: #002E6D;
-	font-size: 20px;
+	color: #019CDB;
+	font-size: 13pt;
 	text-align: center;
-	font-family: Courgette;
+	font-family: Oxygen;
 	display: inline-block;
-}
-
- .footerOverall {
-	text-align: center;
-
-}
-
-.linkDiv{
 }
 
 img{
@@ -59,9 +54,25 @@ img{
 .emailLabel, .passwordLabel{
 	background-color: transparent;
 	font-size: 15pt !important;
-	color: white !important;
 	border-bottom: white !important;
+	transition: width .35s ease-in-out;
+	outline: none;
+	color: white !important;
+	font-weight: bold;
+
+
+
 }
+
+  input:focus {
+       color: red !important;
+       outline: 2px solid #FFCC4F !important;  
+    }
+
+    input.visited {
+       color: red !important;
+       outline: 2px solid #FFCC4F !important;  
+    }
 
 
 

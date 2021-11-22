@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "./actions/authActions";
 import classnames from "classnames";
+import "./styles/createprofile.css";
+import NavyLogoMock from "./assets/NavyLogoMock.png";
 
 let readingC = false;
 let moviesC = false;
@@ -81,7 +83,7 @@ class CreateProfile extends Component {
     return(
         <div className="container">
             <div className="row">
-                <h1>Create your Profile</h1>
+                <h1 className = "dark-blue">Create your Profile</h1>
             </div>
             <form className="createProfileForm" noValidate onSubmit={this.sendData}>
                 <div className="row">
@@ -133,12 +135,15 @@ class CreateProfile extends Component {
 
                     </div>
                     <div className="row">
-                        <button variant="outlined" type="submit">
-                            Sign up
+                        <button variant="outlined" id="btn" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
+                            Sign Up
                         </button>
                     </div>
                 </div> 
             </form> 
+            <div className="imgDiv">
+                    <img src={NavyLogoMock}/>
+                </div>
         </div>
         
     );
