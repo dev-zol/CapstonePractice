@@ -3,6 +3,16 @@ import './styles/cardimage.css'
 
 class Card extends Component {
 
+  sendEmail = event => {
+    event.preventDefault();
+
+    let email = this.props.email
+    let name = this.props.firstName + " " + this.props.lastName;
+    let body = "Hello, " + name + "%0DI saw you on Flock, and we have some common interests!%0D%0D" 
+
+    document.location = "mailto:"+email+"?subject=Hello from your Flockmate!&body=" + body;
+  }
+
   render() {
     return(
       <div className="card">
@@ -21,7 +31,7 @@ class Card extends Component {
           </ul>
         </div>
         <div className="card-action">
-          <a href="#" className="waves-effect waves-light btn-small">Chat</a>
+          <button onClick={this.sendEmail}className="waves-effect waves-light btn-small">Chat</button>
         </div>
       </div>
     )
