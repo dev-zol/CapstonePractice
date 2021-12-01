@@ -1,6 +1,6 @@
 # Clone repo
 
-#cd CapstonePractice 
+# cd CapstonePractice 
 ## npm install 
 ## npm init -y
 ## npm i express axios cors dotenv
