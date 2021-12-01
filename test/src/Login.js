@@ -61,7 +61,7 @@ class Login extends Component {
             <div className="row">
                     <h1 className = "dark-blue">Welcome to </h1>
                  <div className="imgDiv">
-                    <img src={NavyLogoMock}/>
+                    <img src={NavyLogoMock} className="logo"/>
                 </div>
             </div>
             <form className="loginForm" noValidate onSubmit={this.sendData}>

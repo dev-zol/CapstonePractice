@@ -41,6 +41,10 @@ p{
 	display: inline-block;
 }
 
+.logo {
+	max-width: 25%;
+}
+
 .imgDiv {
 	text-align: center;
 
