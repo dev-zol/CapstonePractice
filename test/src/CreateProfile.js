@@ -84,6 +84,12 @@ class CreateProfile extends Component {
         let b = document.getElementById("survey").hidden = false;
     }
 
+    backPage = event => {
+        event.preventDefault();
+        let a = document.getElementById("data").hidden = false;
+        let b = document.getElementById("survey").hidden = true;
+    }
+
     onMoviesChange = event => {
         if(moviesC == false) {
             moviesC = true
@@ -195,6 +201,7 @@ class CreateProfile extends Component {
                             </div>
 
                             <div className="row">
+                            <button variant="outlined" id="nextbtn" className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{marginRight: "2rem"}} onClick={this.backPage} >Back</button>
                                 <button variant="outlined" id="btn" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
                                 Sign Up
                                 </button>
