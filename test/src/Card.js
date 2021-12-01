@@ -31,7 +31,7 @@ class Card extends Component {
           </ul>
         </div>
         <div className="card-action">
-          <button onClick={this.sendEmail}className="waves-effect waves-light btn-small">Chat</button>
+          <button onClick={this.sendEmail}className="waves-effect waves-light btn-small">Email</button>
         </div>
       </div>
     )
