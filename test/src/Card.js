@@ -15,6 +15,9 @@ class Card extends Component {
           <ul>
             {this.props.reading? <li>Reading</li> : null}
             {this.props.movies? <li>Movies</li> : null}
+            {this.props.sports? <li>Sports</li> : null}
+            {this.props.music? <li>Music</li> : null}
+            {this.props.gaming? <li>Gaming</li> : null}
           </ul>
         </div>
         <div className="card-action">

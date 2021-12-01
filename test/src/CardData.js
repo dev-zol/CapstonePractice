@@ -18,7 +18,10 @@ class CardData extends Component {
     userEmail = this.props.auth.user.email;
     const rm = {
       reading: this.props.auth.user.reading,
-      movies: this.props.auth.user.movies
+      movies: this.props.auth.user.movies,
+      sports: this.props.auth.user.sports,
+      music: this.props.auth.user.music,
+      gaming: this.props.auth.user.gaming
     }
     this.props.getData(rm);
   }
@@ -28,7 +31,9 @@ class CardData extends Component {
     const listItems = Object.keys(data).map((key, index) => {
 
       const buildJSX =  <div className="col s12 m4">
-                        <Card firstName={data[key]["firstName"]} lastName={data[key]["lastName"]} email={data[key]["email"]} key={key} bg={bg1} reading={data[key]["reading"]} movies={data[key]["movies"]} />
+                        <Card firstName={data[key]["firstName"]} lastName={data[key]["lastName"]} email={data[key]["email"]} key={key} bg={bg1} 
+                              reading={data[key]["reading"]} movies={data[key]["movies"]} sports={data[key]["sports"]} music={data[key]["music"]} 
+                              gaming={data[key]["gaming"]}/>
                         </div>
 
       if (data[key]["email"] === userEmail) {

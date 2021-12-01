@@ -36,7 +36,10 @@ router.post("/register", (req, res) => {
                 email: req.body.email,
                 password: req.body.password,
                 reading: req.body.reading,
-                movies: req.body.movies
+                movies: req.body.movies,
+                sports: req.body.sports,
+                music: req.body.music,
+                gaming: req.body.gaming,
             });
             // Hash password before saving in database
             bcrypt.genSalt(10, (err, salt) => {
@@ -89,6 +92,9 @@ router.post("/login", (req, res) => {
                     lastName: user.lastName,
                     reading: user.reading,
                     movies: user.movies,
+                    sports: user.sports,
+                    music: user.music,
+                    gaming: user.gaming,
                     email: user.email
                 };
                 // Sign token
@@ -116,11 +122,9 @@ router.post("/login", (req, res) => {
 });
 
 router.post("/data", (req, res) => {
-    console.log(req.body)
-    User.find({'reading' : req.body.reading, 'movies' : req.body.movies}).then(user => {
+    User.find({'reading' : req.body.reading, 'movies' : req.body.movies, 'sports' : req.body.sports, 'music' : req.body.music, 'gaming' : req.body.gaming}).then(user => {
         res.send(user)
     });
 });
-
 
 module.exports = router;
