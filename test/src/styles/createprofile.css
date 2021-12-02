@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Oxygen:wght@700&display=swap');
+
+/* All */
+*{
+	background-color: #95D2F3;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/* Create Your Profile Title */
+.dark-blue {
+	color: #002E6D !important;
+	font-size: 50px;
+	text-align: center;
+	font-family: Courgette;
+}
+
+/* Logo Image Div */
+.imgDiv{
+	max-width: 80%;
+}
+
+/* Text Box Titles */
+.firstNameText, .lastNameText, .emailText, .passwordText{
+	color: white !important;
+}
+
+/* Next Button */
+
+/* Flock Logo */
