@@ -56,7 +56,6 @@ export const setUserLoading = () => {
         type: USER_LOADING
     };
 };
-
 // Log user out
 export const logoutUser = () => dispatch => {
     // Remove token from local storage
@@ -66,4 +65,3 @@ export const logoutUser = () => dispatch => {
     // Set current user to empty object {} which will set isAuthenticated to false
     dispatch(setCurrentUser({}));
 };
-

@@ -26,6 +26,18 @@ const UserSchema = new Schema({
     type:Boolean,
     required: true
   },
+  sports: {
+    type:Boolean,
+    required: true
+  },
+  music: {
+    type:Boolean,
+    required: true
+  },
+  gaming: {
+    type:Boolean,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now
