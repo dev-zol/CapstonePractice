@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "./actions/authActions";
 import classnames from "classnames";
+import "./styles/loginpage.css";
+import Newnavylogo from "./assets/Newnavylogo.svg"
+import './styles/loginpage.css';
 
-
-// test
-
+// test 
 class Login extends Component {
     constructor() {
         super();
@@ -58,29 +59,39 @@ class Login extends Component {
     return (
         <div className="container">
             <div className="row">
-                <h1>Welcome to JaysFlock</h1>
+                    <h1 className = "dark-blue">Welcome to </h1>
+                 <div className="imgDiv">
+                    <img src={Newnavylogo} className="logo"/>
+                </div>
             </div>
             <form className="loginForm" noValidate onSubmit={this.sendData}>
                 <div className="row">
                     <div className="input-field col s12">
-                        <label htmlFor="email">Email</label>
+                        <label htmlFor="email" className="emailLabel">Email</label>
                         <span className="red-text"> {errors.email}{errors.emailnotfound}</span>
                         <input className={classnames("", {invalid: errors.email || errors.emailnotfound})} error={errors.email} type="text" id="email" name="email" value={this.state.email} onChange={this.onInputChange} /> 
                     </div>
                     <div className="input-field col s12">
-                        <label htmlFor="password">Password</label>
+                        <label htmlFor="password" className="passwordLabel">Password</label>
                         <span className="red-text"> {errors.password}{errors.passwordincorrect}</span>
                         <input className={classnames("", {invalid: errors.password || errors.passwordincorrect})} error={errors.password} type="password" id="password" name="password" value={this.state.password} onChange={this.onInputChange} />
                     </div>
-                    <div className="">
-                        <button variant="outlined" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
+                    <div className="button">
+                        <button variant="outlined" id="btn" className="btn btn-large waves-effect waves-light hoverable blue accent-3" type="submit">
                             Log in
                         </button>
-                     <p> If you do not already have an account </p> 
-                     <Link to="/CreateProfile"> 
-                        Sign Up!
-                    </Link>
+                       </div>
+
+                <div className = "footerOverall">
+                    <div className = "customFooter">
+                            <p className = "dark-blue2"> If you do not already have an account </p> 
                     </div>
+
+                    <div className = "customFooter">
+                        <Link to="/CreateProfile" className="signUpLink">Sign Up!</Link>
+                    </div>
+                </div>
+                 
                 </div> 
             </form> 
         </div>

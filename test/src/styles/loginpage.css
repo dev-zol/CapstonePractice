@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Oxygen:wght@700&display=swap');
+
+*{
+	background-color: #95D2F3;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#btn:hover{
+	background-color: #FFCC4F !important;
+}
+
+.button{
+	text-align: center;
+}
+
+.signUpLink:hover{
+	color: white;
+}
+
+.signUpLink{
+	font-size: 14pt;
+}
+
+p{
+	color: #002E6D;
+}
+
+.customFooter{
+	font-weight: bold;
+	text-align: center;
+	color: #019CDB;
+	display: inline-block;
+  	width: 340px;
+  	height: 100px;
+  	padding-top: 50px;
+}
+
+.dark-blue {
+	color: #002E6D;
+	font-size: 50px;
+	text-align: center;
+	font-family: Courgette;
+	
+}
+
+.dark-blue2 {
+	color: #019CDB;
+	font-size: 13pt;
+	text-align: center;
+	font-family: Oxygen;
+	display: inline-block;
+}
+
+.imgDiv {
+	text-align: center;
+
+}
+
+.emailLabel, .passwordLabel{
+	background-color: transparent;
+	font-size: 15pt !important;
+	border-bottom: white !important;
+	transition: width .35s ease-in-out;
+	outline: none;
+	color: white !important;
+	font-weight: bold;
+}
+
+input{
+	color: #002E6D !important;
+}
+
+input:focus {
+    color: white !important;
+    outline: 2px solid #FFCC4F !important;  
+}
+
+input.visited {
+    color: #FFCC4F !important;
+    outline: 2px solid #FFCC4F !important;  
+}
+
+
+
+
+

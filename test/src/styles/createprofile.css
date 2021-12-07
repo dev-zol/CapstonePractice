@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Oxygen:wght@700&display=swap');
+
+*{
+	background-color: #95D2F3;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/* Footer */
+.customFooter{
+	font-weight: bold;
+	text-align: center;
+	color: #019CDB;
+}
+
+/* Create Your Profile */
+.dark-blue {
+	color: #002E6D !important;
+	font-size: 50px;
+	text-align: center;
+	font-family: Courgette;
+	
+}
+
+.imgDiv{
+	max-width: 80%;
+}
+
+.emailLabel, .passwordLabel{
+	background-color: transparent;
+	font-size: 15pt !important;
+	border-bottom: white !important;
+	transition: width .35s ease-in-out;
+	outline: none;
+	color: white !important;
+	font-weight: bold;
+}
+
+.row{
+	text-align: left;
+}
+
+.buttonDiv{
+	text-align: center !important;
+}
