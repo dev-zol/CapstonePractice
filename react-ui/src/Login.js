@@ -59,7 +59,6 @@ class Login extends Component {
     return (
         <div className="container">
             <div className="row">
-                    <h1 className = "dark-blue">Welcome to </h1>
                  <div className="imgDiv">
                     <img src={nnavylogo} className="logo"/>
                 </div>
