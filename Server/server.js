@@ -16,13 +16,14 @@ app.use(
 app.use(express.json());
 // DB Config
 const db = require("./config/keys").mongoURI;
+const uri = process.env.MONGODB_URI;
 // Connect to MongoDB
 mongoose
   .connect(
     db, {
       useNewUrlParser: true
     }
-    || 'mongodb://localhost/CapstonePractice'
+    || uri
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
