@@ -22,6 +22,7 @@ mongoose
     db, {
       useNewUrlParser: true
     }
+    || 'mongodb://localhost/CapstonePractice'
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
