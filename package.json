@@ -2,19 +2,25 @@
   "name": "CapstonePractice",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Server/server.js"
+    "start": "node Server/server.js",
+    "build": "cd react-ui/ && npm install && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dev-zol/CapstonePractice.git"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
