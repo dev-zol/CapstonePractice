@@ -21,10 +21,12 @@ const uri = process.env.MONGODB_URI;
 // Connect to MongoDB
 mongoose
   .connect(
-    db, {
+    uri, {
       useNewUrlParser: true
     }
-    || uri
+    || db, {
+      useNewUrlParser: true
+    }
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
