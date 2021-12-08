@@ -16,6 +16,7 @@ app.use(
 );
 app.use(express.json());
 // DB Config
+require('dotenv').config()
 const db = require("./config/keys").mongoURI;
 const uri = process.env.MONGODB_URI;
 // Connect to MongoDB
