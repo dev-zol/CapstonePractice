@@ -15,7 +15,7 @@ class Navbar extends Component {
             <nav>
                 <div className="nav-wrapper">
                 <a href="#" className="brand-logo" style={{paddingLeft: "1rem"}}>Flock</a>
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                <ul id="nav-mobile" className="right">
                     <li><a className="waves-effect waves-light btn" onClick={this.onLogoutClick}>Logout {user.firstName + " " + user.lastName}</a></li>
                 </ul>
                 </div>
