@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { loginUser } from "./actions/authActions";
 import classnames from "classnames";
 import "./styles/loginpage.css";
-import Newnavylogo from "./assets/Newnavylogo.svg"
+import nnavylogo from "./assets/nnavylogo.PNG"
 import './styles/loginpage.css';
 
 // test 
@@ -61,7 +61,7 @@ class Login extends Component {
             <div className="row">
                     <h1 className = "dark-blue">Welcome to </h1>
                  <div className="imgDiv">
-                    <img src={Newnavylogo} className="logo"/>
+                    <img src={nnavylogo} className="logo"/>
                 </div>
             </div>
             <form className="loginForm" noValidate onSubmit={this.sendData}>

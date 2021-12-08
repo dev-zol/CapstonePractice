@@ -55,7 +55,16 @@ p{
 
 .imgDiv {
 	text-align: center;
+	
+}
 
+.imgImg {
+	width: 50px;
+}
+
+.logo {
+	width: 50%;
+	text-align: center;
 }
 
 .emailLabel, .passwordLabel{

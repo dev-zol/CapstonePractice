@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { registerUser } from "./actions/authActions";
 import classnames from "classnames";
 import "./styles/createprofile.css";
-import Newnavylogo from "./assets/Newnavylogo.svg"
+import nnavylogo from "./assets/nnavylogo.PNG"
 import './styles/createprofile.css';
 
 let readingC = false;
@@ -212,7 +212,7 @@ class CreateProfile extends Component {
                 </div> 
             </form> 
             <div className="imgDiv">
-                    <img src={Newnavylogo}/>
+                    <img className="imgImg" src={nnavylogo}/>
                 </div>
         </div>
         
