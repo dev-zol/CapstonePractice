@@ -65,6 +65,8 @@ p{
 .logo {
 	width: 50%;
 	text-align: center;
+	margin-top: 15px;
+	margin-left: 20px;
 }
 
 .emailLabel, .passwordLabel{
