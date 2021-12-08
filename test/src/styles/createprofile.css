@@ -30,7 +30,17 @@
 .emailLabel, .passwordLabel{
 	background-color: transparent;
 	font-size: 15pt !important;
-	color: white !important;
 	border-bottom: white !important;
+	transition: width .35s ease-in-out;
+	outline: none;
+	color: white !important;
+	font-weight: bold;
 }
 
+.row{
+	text-align: left;
+}
+
+.buttonDiv{
+	text-align: center !important;
+}

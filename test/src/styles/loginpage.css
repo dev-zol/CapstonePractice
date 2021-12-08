@@ -11,6 +11,18 @@
 	background-color: #FFCC4F !important;
 }
 
+.button{
+	text-align: center;
+}
+
+.signUpLink:hover{
+	color: white;
+}
+
+.signUpLink{
+	font-size: 14pt;
+}
+
 p{
 	color: #002E6D;
 }
@@ -41,10 +53,6 @@ p{
 	display: inline-block;
 }
 
-.logo {
-	max-width: 25%;
-}
-
 .imgDiv {
 	text-align: center;
 
@@ -58,20 +66,21 @@ p{
 	outline: none;
 	color: white !important;
 	font-weight: bold;
-
-
-
 }
 
-  input:focus {
-       color: red !important;
-       outline: 2px solid #FFCC4F !important;  
-    }
+input{
+	color: #002E6D !important;
+}
 
-    input.visited {
-       color: red !important;
-       outline: 2px solid #FFCC4F !important;  
-    }
+input:focus {
+    color: white !important;
+    outline: 2px solid #FFCC4F !important;  
+}
+
+input.visited {
+    color: #FFCC4F !important;
+    outline: 2px solid #FFCC4F !important;  
+}
 
 
 

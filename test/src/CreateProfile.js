@@ -6,7 +6,8 @@ import { connect } from "react-redux";
 import { registerUser } from "./actions/authActions";
 import classnames from "classnames";
 import "./styles/createprofile.css";
-import NavyLogoMock from "./assets/NavyLogoMock.png";
+import Newnavylogo from "./assets/Newnavylogo.svg"
+import './styles/createprofile.css';
 
 let readingC = false;
 let moviesC = false;
@@ -211,7 +212,7 @@ class CreateProfile extends Component {
                 </div> 
             </form> 
             <div className="imgDiv">
-                    <img src={NavyLogoMock}/>
+                    <img src={Newnavylogo}/>
                 </div>
         </div>
         
